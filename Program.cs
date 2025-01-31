@@ -7,6 +7,9 @@ namespace BasicCalculator {
         public static void Main(string[] args) {
             MathOperation mathOperation = GetMathOperation();
             Console.WriteLine(mathOperation.GetMethodInfo().Name + "-Result: " + mathOperation(GetNumber(), GetNumber()));
+
+            Console.Write("Press any key to exit...");
+            Console.ReadKey();
         }
 
         private static MathOperation GetMathOperation() {
